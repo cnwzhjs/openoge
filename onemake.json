@@ -221,7 +221,8 @@
             "boost_numeric_conversion",
             "boost_range",
             "boost_container",
-            "boost_tr1"
+            "boost_tr1",
+            "boost_atomic"
         ]
     },
 
