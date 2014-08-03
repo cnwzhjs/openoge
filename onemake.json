@@ -1,0 +1,377 @@
+{
+    "oge_system": {
+        "directory": "oge/system",
+        "type": "library",
+        "output_headers": true
+    },
+    
+    "oge_graphics": {
+        "directory": "oge/graphics",
+        "type": "library",
+        "depends": ["oge_system"],
+        "output_headers": true
+    },
+
+    "oge_network": {
+        "directory": "oge/network",
+        "type": "library",
+        "depends": ["oge_system", "boost_asio"],
+        "output_headers": true
+    },
+
+    "oge_audio": {
+        "directory": "oge/audio",
+        "type": "library",
+        "depends": ["oge_system"],
+        "output_headers": true
+    },
+
+    "boost_config": {
+        "directory": "deps/boost/config",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_utility": {
+        "directory": "deps/boost/utility",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_iterator"]
+    },
+
+    "boost_integer": {
+        "directory": "deps/boost/integer",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_static_assert"]
+    },
+
+    "boost_iterator": {
+        "directory": "deps/boost/iterator",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_detail"]
+    },
+
+    "boost_function": {
+        "directory": "deps/boost/function",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_smart_ptr", "boost_type_traits"]
+    },
+
+    "boost_preprocessor": {
+        "directory": "deps/boost/preprocessor",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_exception": {
+        "directory": "deps/boost/exception",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_utility"]
+    },
+
+    "boost_detail": {
+        "directory": "deps/boost/detail",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_predef"]
+    },
+
+    "boost_smart_ptr": {
+        "directory": "deps/boost/smart_ptr",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_exception"]
+    },
+
+    "boost_type_traits": {
+        "directory": "deps/boost/type_traits",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_mpl"]
+    },
+
+    "boost_mpl": {
+        "directory": "deps/boost/mpl",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_preprocessor"]
+    },
+
+    "boost_move": {
+        "directory": "deps/boost/move",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_format": {
+        "directory": "deps/boost/format",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_smart_ptr"]
+    },
+
+    "boost_optional": {
+        "directory": "deps/boost/optional",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_predef": {
+        "directory": "deps/boost/predef",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_range": {
+        "directory": "deps/boost/range",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_concept_check"]
+    },
+
+    "boost_concept_check": {
+        "directory": "deps/boost/concept_check",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_container": {
+        "directory": "deps/boost/container",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_tr1": {
+        "directory": "deps/boost/tr1",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_tokenizer": {
+        "directory": "deps/boost/tokenizer",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_chrono": {
+        "directory": "deps/boost/chrono",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_ratio", "boost_mpl", "boost_system", "boost_exception"]
+    },
+
+    "boost_ratio": {
+        "directory": "deps/boost/ratio",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_integer", "boost_type_traits", "boost_utility"]
+    },
+
+    "boost_bind": {
+        "directory": "deps/boost/bind",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_date_time": {
+        "directory": "deps/boost/date_time",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_smart_ptr", "boost_conversion", "boost_mpl", "boost_integer", "boost_type_traits", "boost_tokenizer"]
+    },
+
+    "boost_conversion": {
+        "directory": "deps/boost/conversion",
+        "type": "library",
+        "output_headers": true,
+        "depends": [
+            "boost_static_assert", 
+            "boost_array", 
+            "boost_numeric_conversion", 
+            "boost_math", 
+            "boost_range"
+        ]
+    },
+
+    "boost_numeric_conversion": {
+        "directory": "deps/boost/numeric_conversion",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_math": {
+        "directory": "deps/boost/math",
+        "type": "library",
+        "output_headers": true,
+        "extra_include_dirs": ["${SRC_DIR}/src/tr1", "${SRC_DIR}/../conversion/include"],
+        "depends": [
+            "boost_config", 
+            "boost_static_assert", 
+            "boost_integer", 
+            "boost_type_traits", 
+            "boost_utility", 
+            "boost_format",
+            "boost_optional",
+            "boost_detail",
+            "boost_array",
+            "boost_numeric_conversion",
+            "boost_range",
+            "boost_container",
+            "boost_tr1"
+        ]
+    },
+
+    "boost_static_assert": {
+        "directory": "deps/boost/static_assert",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_array": {
+        "directory": "deps/boost/array",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_functional"]
+    },
+
+    "boost_functional": {
+        "directory": "deps/boost/functional",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_detail"]
+    },
+
+    "boost_io": {
+        "directory": "deps/boost/io",
+        "type": "library",
+        "output_headers": true
+    },
+
+    "boost_system": {
+        "directory": "deps/boost/system",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_integer", "boost_utility", "boost_iterator"],
+        "env": {
+            "cxxflags": ["-DBOOST_SYSTEM_STATIC_LINK=1"]
+        }
+    },
+
+    "boost_atomic": {
+        "directory": "deps/boost/atomic",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_integer", "boost_smart_ptr", "boost_type_traits"]
+    },
+
+    "boost_thread": {
+        "directory": "deps/boost/thread",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_system", "boost_type_traits", "boost_mpl", "boost_move", "boost_date_time", "boost_chrono", "boost_bind", "boost_io", "boost_atomic", "boost_function", "boost_core"],
+        "exclude_src_dirs": ["win32"],
+        "exclude_src_files": ["tss_null.cpp"],
+        "env": {
+            "cxxflags": ["-DBOOST_THREAD_BUILD_LIB=1"]
+        }
+    },
+
+    "boost_random": {
+        "directory": "deps/boost/random",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_utility"],
+        "env": {
+            "cxxflags": ["-DBOOST_RANDOM_STATIC_LINK=1"]
+        }
+    },
+
+    "boost_locale": {
+        "directory": "deps/boost/locale",
+        "type": "library",
+        "output_headers": true,
+        "depends": [
+            "boost_config", 
+            "boost_integer", 
+            "boost_utility", 
+            "boost_function", 
+            "boost_preprocessor", 
+            "boost_exception", 
+            "boost_detail",
+            "boost_thread"
+        ],
+        "exclude_src_dirs": ["win32", "icu", "posix", "encoding"],
+        "env": {
+            "cxxflags": ["-DBOOST_LOCALE_STATIC_LINK=1"]
+        }
+    },
+
+    "boost_asio": {
+        "directory": "deps/boost/asio",
+        "type": "library",
+        "output_headers": true,
+        "depends": [
+            "boost_config", 
+            "boost_utility", 
+            "boost_function", 
+            "boost_preprocessor", 
+            "boost_exception",
+            "boost_regex"
+        ],
+        "env": {
+            "cxxflags": ["-DBOOST_ASIO_STATIC_LINK=1"]
+        }
+    },
+
+    "boost_regex": {
+        "directory": "deps/boost/regex",
+        "type": "library",
+        "output_headers": true,
+        "depends": [
+            "boost_smart_ptr", 
+            "boost_system", 
+            "boost_exception", 
+            "boost_mpl", 
+            "boost_type_traits",
+            "boost_functional"
+        ],
+        "env": {
+            "cxxflags": ["-DBOOST_REGEX_STATIC_LINK=1"]
+        }
+    },
+
+    "boost_filesystem": {
+        "directory": "deps/boost/filesystem",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_io", "boost_type_traits", "boost_system", "boost_smart_ptr", "boost_functional"],
+        "env": {
+            "cxxflags": ["-DBOOST_FILESYSTEM_STATIC_LINK=1"]
+        }
+    },
+
+    "boost_uuid": {
+        "directory": "deps/boost/uuid",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_integer", "boost_type_traits"]
+    },
+
+    "boost_algorithm": {
+        "directory": "deps/boost/algorithm",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config", "boost_integer", "boost_type_traits"]
+    },
+
+    "boost_core": {
+        "directory": "deps/boost/core",
+        "type": "library",
+        "output_headers": true,
+        "depends": ["boost_config"]
+    }
+}

@@ -1,0 +1,129 @@
+[submodule "onemake"]
+	path = onemake
+	url = https://github.com/cnwzhjs/onemake.git
+[submodule "deps/boost/algorithm"]
+	path = deps/boost/algorithm
+	url = https://github.com/boostorg/algorithm
+[submodule "deps/boost/array"]
+	path = deps/boost/array
+	url = https://github.com/boostorg/array
+[submodule "deps/boost/atomic"]
+	path = deps/boost/atomic
+	url = https://github.com/boostorg/atomic
+[submodule "deps/boost/bind"]
+	path = deps/boost/bind
+	url = https://github.com/boostorg/bind
+[submodule "deps/boost/chrono"]
+	path = deps/boost/chrono
+	url = https://github.com/boostorg/chrono
+[submodule "deps/boost/concept_check"]
+	path = deps/boost/concept_check
+	url = https://github.com/boostorg/concept_check
+[submodule "deps/boost/config"]
+	path = deps/boost/config
+	url = https://github.com/boostorg/config
+[submodule "deps/boost/asio"]
+	path = deps/boost/asio
+	url = https://github.com/boostorg/asio
+[submodule "deps/boost/conversion"]
+	path = deps/boost/conversion
+	url = https://github.com/boostorg/conversion
+[submodule "deps/boost/container"]
+	path = deps/boost/container
+	url = https://github.com/boostorg/container
+[submodule "deps/boost/detail"]
+	path = deps/boost/detail
+	url = https://github.com/boostorg/detail
+[submodule "deps/boost/date_time"]
+	path = deps/boost/date_time
+	url = https://github.com/boostorg/date_time
+[submodule "deps/boost/exception"]
+	path = deps/boost/exception
+	url = https://github.com/boostorg/exception
+[submodule "deps/boost/format"]
+	path = deps/boost/format
+	url = https://github.com/boostorg/format
+[submodule "deps/boost/function"]
+	path = deps/boost/function
+	url = https://github.com/boostorg/function
+[submodule "deps/boost/integer"]
+	path = deps/boost/integer
+	url = https://github.com/boostorg/integer
+[submodule "deps/boost/io"]
+	path = deps/boost/io
+	url = https://github.com/boostorg/io
+[submodule "deps/boost/iterator"]
+	path = deps/boost/iterator
+	url = https://github.com/boostorg/iterator
+[submodule "deps/boost/filesystem"]
+	path = deps/boost/filesystem
+	url = https://github.com/boostorg/filesystem
+[submodule "deps/boost/locale"]
+	path = deps/boost/locale
+	url = https://github.com/boostorg/locale
+[submodule "deps/boost/functional"]
+	path = deps/boost/functional
+	url = https://github.com/boostorg/functional
+[submodule "deps/boost/math"]
+	path = deps/boost/math
+	url = https://github.com/boostorg/math
+[submodule "deps/boost/numeric_conversion"]
+	path = deps/boost/numeric_conversion
+	url = https://github.com/boostorg/numeric_conversion
+[submodule "deps/boost/optional"]
+	path = deps/boost/optional
+	url = https://github.com/boostorg/optional
+[submodule "deps/boost/move"]
+	path = deps/boost/move
+	url = https://github.com/boostorg/move
+[submodule "deps/boost/mpl"]
+	path = deps/boost/mpl
+	url = https://github.com/boostorg/mpl
+[submodule "deps/boost/predef"]
+	path = deps/boost/predef
+	url = https://github.com/boostorg/predef
+[submodule "deps/boost/preprocessor"]
+	path = deps/boost/preprocessor
+	url = https://github.com/boostorg/preprocessor
+[submodule "deps/boost/random"]
+	path = deps/boost/random
+	url = https://github.com/boostorg/random
+[submodule "deps/boost/ratio"]
+	path = deps/boost/ratio
+	url = https://github.com/boostorg/ratio
+[submodule "deps/boost/range"]
+	path = deps/boost/range
+	url = https://github.com/boostorg/range
+[submodule "deps/boost/regex"]
+	path = deps/boost/regex
+	url = https://github.com/boostorg/regex
+[submodule "deps/boost/smart_ptr"]
+	path = deps/boost/smart_ptr
+	url = https://github.com/boostorg/smart_ptr
+[submodule "deps/boost/static_assert"]
+	path = deps/boost/static_assert
+	url = https://github.com/boostorg/static_assert
+[submodule "deps/boost/system"]
+	path = deps/boost/system
+	url = https://github.com/boostorg/system
+[submodule "deps/boost/tokenizer"]
+	path = deps/boost/tokenizer
+	url = https://github.com/boostorg/tokenizer
+[submodule "deps/boost/tr1"]
+	path = deps/boost/tr1
+	url = https://github.com/boostorg/tr1
+[submodule "deps/boost/thread"]
+	path = deps/boost/thread
+	url = https://github.com/boostorg/thread
+[submodule "deps/boost/type_traits"]
+	path = deps/boost/type_traits
+	url = https://github.com/boostorg/type_traits
+[submodule "deps/boost/utility"]
+	path = deps/boost/utility
+	url = https://github.com/boostorg/utility
+[submodule "deps/boost/uuid"]
+	path = deps/boost/uuid
+	url = https://github.com/boostorg/uuid
+[submodule "deps/boost/core"]
+	path = deps/boost/core
+	url = https://github.com/boostorg/core
